@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="004-p2p-dataservice" />
+        <module name="005-p2p-web" />
+        <module name="006-p2p-timer" />
+        <module name="007-p2p-pay" />
+        <module name="alipay-sdk-java" />
+        <module name="HttpClient" />
+        <module name="httpclient-test" />
+        <module name="QRCode-test" />
+        <module name="xml-dom4j-xpath" />
+      </profile>
+      <profile name="Annotation profile for 003-p2p-exterface" enabled="true">
+        <sourceOutputDir name="../../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="002-p2p-common" />
+        <module name="003-p2p-exterface" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="001-p2p-parent" target="1.5" />
+      <module name="002-p2p-common" target="1.5" />
+      <module name="003-p2p-exterface" target="1.5" />
+      <module name="004-p2p-dataservice" target="1.5" />
+      <module name="005-p2p-web" target="1.5" />
+      <module name="006-p2p-timer" target="1.5" />
+      <module name="007-p2p-pay" target="1.5" />
+      <module name="alipay-sdk-java" target="1.5" />
+      <module name="HttpClient" target="1.8" />
+      <module name="httpclient-test" target="1.5" />
+      <module name="QRCode-test" target="1.8" />
+      <module name="xml-dom4j-xpath" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="002-p2p-common" options="-parameters" />
+      <module name="003-p2p-exterface" options="-parameters" />
+      <module name="004-p2p-dataservice" options="-parameters" />
+      <module name="005-p2p-web" options="-parameters" />
+      <module name="006-p2p-timer" options="-parameters" />
+      <module name="007-p2p-pay" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,3 @@
+p2p-exterface
+1.该工程是一个maven java工程
+2.dubbo分布式框架推荐使用的一种方式,主要用于存放到实体bean和业务接口

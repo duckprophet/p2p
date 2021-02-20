@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="007-p2p-pay:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/007_p2p_pay_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="007-p2p-pay/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="007-p2p-pay" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

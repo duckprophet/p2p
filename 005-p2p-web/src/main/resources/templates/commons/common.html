@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script type="text/javascript" th:inline="javascript">
+    var contextPath = [[${#httpServletRequest.getContextPath()}]];
+
+    //http://localhost:8080/p2p/loan/loan?ptype=1
+    var scheme = [[${#httpServletRequest.getScheme()}]];
+    var serverName = [[${#httpServletRequest.getServerName()}]];
+    var serverPort = [[${#httpServletRequest.getServerPort()}]];
+
+    var requestParam = [[${#httpServletRequest.queryString}]];
+
+    var requestURL = [[${#httpServletRequest.requestURL}]];
+
+    var requestAllURL = [[${#httpServletRequest.requestURL + "?" + #httpServletRequest.queryString}]];
+
+    $(function () {
+        $(".btn-login").on("click",function () {
+            var commonRedirectURL = $("#commonRedirectURL").val();
+            window.location.href = contextPath + "/loan/page/login?redirectURL="+commonRedirectURL;
+        });
+    });
+</script>
+<input type="hidden" id="commonRedirectURL" th:value="${#strings.replace(#httpServletRequest.requestURL + '?' + #httpServletRequest.queryString,'?null','')}"/>
+</body>
+</html>
